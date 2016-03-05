@@ -2,6 +2,7 @@ html {
 	box-sizing: border-box;
 	-web-font-smoothing: antialiased;
 }
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -12,40 +13,44 @@ body {
 	color: #AA8039;
 	font-weight: 300;
 }
+
 p {
 	font-family: "Quattrocento" , serif;
 }
+
 a {
 	color: #AA8039;
 }
+
 div {
 	border: 1px solid white;
 }
+
 section {
 	margin: 0 auto;
 	width: 75%;
 }	
-.swing {
+
+#swing {
 	width: 440px;
 	height: 730px;
 }
 
-.introduction {
-	images: url(../images/carona-arch.jpg);
-	height: 100%;
-}
 .masthead-intro,
 .masthead-heading {
 	text-align: right;
 	margin-right: 26%;
 	
 }
+
 .masthead-intro{
 	margin-top: -30em;
 }
+
 .masthead-heading {
 	margin-bottom: 12.1em;
 }
+
 .links > li {
 	display: inline-block;
 	margin-left: 2em;
