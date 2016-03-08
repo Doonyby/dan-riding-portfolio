@@ -35,7 +35,6 @@ section {
 h2,
 h1 {
 	color: #0D6EFE;
-	
 }
 
 h2 {
@@ -85,4 +84,30 @@ img {
 .background,
 .footer {
 	margin-top: 5em;
+}
+
+@media only screen and (max-width: 800px) {
+	.links > li {
+		padding: 0.4em;
+	}
+	
+	#swing {
+		width: 50%;
+		height: 200%;
+	}
+
+	.masthead-intro,
+	.masthead-heading {
+		margin-right: 15%;
+		letter-spacing: 0.05em;
+	}
+
+	.masthead-intro {
+		font-size: 1em;
+		margin-right: 13%;
+	}
+
+	.masthead-heading {
+		font-size: .075em;
+	}
 }
