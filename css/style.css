@@ -22,13 +22,14 @@ a {
 	color: #AA8039;
 }
 
-div {
-	border: 1px solid white;
+a:hover {
+	opacity: 0.4;
 }
 
 section {
 	margin: 0 auto;
-	width: 75%;
+	width: 60%;
+	text-align: center;
 }	
 
 #swing {
@@ -39,19 +40,28 @@ section {
 .masthead-intro,
 .masthead-heading {
 	text-align: right;
-	margin-right: 26%;
+	margin-right: 24.5%;
+	letter-spacing: 0.12em;
 	
 }
 
 .masthead-intro{
-	margin-top: -30em;
+	margin-top: -14em;
 }
 
 .masthead-heading {
-	margin-bottom: 12.1em;
+	margin-bottom: 22em;
+	margin-right: 26%; 	
 }
 
 .links > li {
 	display: inline-block;
-	margin-left: 2em;
+	text-align: center;
+	padding: 2em;
+}
+
+.portfolio,
+.background,
+.footer {
+	margin-top: 5em;
 }
