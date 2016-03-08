@@ -10,7 +10,7 @@ html {
 body {
 	background-color: #222B38;
 	font-family: "Oswald" , sans-serif;
-	color: #AA8039;
+	color: #FFAA18;
 	font-weight: 300;
 }
 
@@ -19,7 +19,7 @@ p {
 }
 
 a {
-	color: #AA8039;
+	color: #FFAA18;
 }
 
 a:hover {
@@ -30,11 +30,32 @@ section {
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
+}
+
+h2,
+h1 {
+	color: #0D6EFE;
+	
+}
+
+h2 {
+	box-shadow: 2px 3px 3px 4px #000;
+}
+
+h1,
+h3 {
+	text-shadow: 3px 4px 1px #000;
+}
+
+img {
+	border: 2px solid #000;
 }	
 
 #swing {
 	width: 440px;
 	height: 730px;
+	border: 5px solid #000;
+
 }
 
 .masthead-intro,
@@ -57,7 +78,7 @@ section {
 .links > li {
 	display: inline-block;
 	text-align: center;
-	padding: 2em;
+	padding: 1.5em;
 }
 
 .portfolio,
