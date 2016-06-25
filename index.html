@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
+  <title>dan-riding-portfolio</title>  
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Quattrocento:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>dan-riding-portfolio</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
   <header class="introduction">
-    <img id="swing" src="images/carona-arch.jpg">
-    <h1 class="masthead-intro">Dan Riding</h1>
-    <h3 class="masthead-heading">Web Developer</h3>
+    <div class="swingPic">
+      <img id="swing" src="images/carona-arch.jpg">
+    </div>  
+    <div class="introTitles">
+      <h1 class="masthead-intro">Dan Riding</h1>
+      <h3 class="masthead-heading">Web Developer</h3>
+      <button id="enter"><span>Enter Site!</span></button>
+    </div>  
   </header>
-  <section class="overview">
-    <h2>Overview</h2>
-    <p>I am a web developer from Salt Lake City with an overwhelming desire to develop webs.  Most of my work consists of.... </p>
-  </section>
-  <section class="portfolio">
-    <h2>Projects</h2>
-    <ul class="links">
-      <li>
-        <a href="http://codepen.io/danriding/full/obRMEZ/" target="_blank">
-          <img src="images/intropage.png" width="175px" height="100px">
-        </a>
-        <p>About Me</p>
-      </li>
-      <li>
-        <a href="https://drive.google.com/file/d/0B1fE6DK6GoL_VzM4TEI1T29GZlU/view" target="_blank">
-          <img src="images/timeshack.png" width="175px" height="100px">
-        </a>
-        <p>NY Times Hack</p>
-      </li>
-      <li>
-        <a href="http://doonyby.github.io/startup-landing-page-clone/" target="_blank">
-          <img src="images/karmaclon.png" width="175px" height="100px">
-        </a>
-      <p>Karma Landing Page Clone</p>   
-      </li>
-    </ul>
-  </section>
-  <section class="background">
-    <h2>Education & Background</h2>
-    <p>My education consists of a bachelor degree in emergency medicine with an emphasis in wilderness rescue.  My later educations consists of a Web Development Career Path completed through Thinkful.  My experience in Web Development consists of ....  My past experiences have ranged from case management in drug and aclohol rehabilitation, to running a crew for a tile and stone company.</p>
-  </section>
-  <section class="footer">
-    <h2>Find me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> and <a href="https://github.com/" target="_blank">GitHub</a></h2>
+  <br><br>
+  <section class="body">
+    <div class="overview">
+      <h2>Overview</h2>
+      <p>I am a web developer from Salt Lake City with an up and coming background in building and designing web sites.  Most of my work to this point consists in front end develpment.  I have some experienc in html, css, jquery, javascript, and ajax.  I will soon have experience in node.js, angular.js, and react.</p>
+    </div>
+    <div class="portfolio">
+      <h2>Projects</h2>
+      <ul class="links">
+        <li>
+          <a href="http://codepen.io/danriding/full/obRMEZ/" target="_blank">
+            <img src="images/intropage.png" width="175px" height="100px">
+          </a>
+          <p>About Me</p>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/0B1fE6DK6GoL_VzM4TEI1T29GZlU/view" target="_blank">
+            <img src="images/timeshack.png" width="175px" height="100px">
+          </a>
+          <p>NY Times Hack</p>
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/startup-landing-page-clone/" target="_blank">
+            <img src="images/karmaclon.png" width="175px" height="100px">
+          </a>
+        <p>Karma Landing Page Clone</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/jquery-streetfighter/" target="_blank">
+            <img src="images/jquery-streetfighter.png" width="175px" height="100px">
+          </a>
+          <p>Jquery Streetfighter</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/shopping-list/" target="_blank">
+            <img src="images/shopping-list.png" width="175px" height="100px">
+          </a>
+          <p>JS/Bootstrap Shopping List</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/hot-or-cold-starter/" target="_blank">
+            <img src="images/hot-or-cold.png" width="175px" height="100px">
+          </a>
+          <p>Hot or Cold Game</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/quiz-ski-conditions/" target="_blank">
+            <img src="images/quiz.png" width="175px" height="100px">
+          </a>
+          <p>Backcountry Quiz Challenge</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/contacts-application/" target="_blank">
+            <img src="images/contacts-app.png" width="175px" height="100px">
+          </a>
+          <p>Contacts Application</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/stackerAJAX/" target="_blank">
+            <img src="images/ajax-stacker.png" width="175px" height="100px">
+          </a>
+          <p>AJAX Stacker Application</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/tictactoe-2/" target="_blank">
+            <img src="images/tictactoe.png" width="175px" height="100px">
+          </a>
+          <p>Tic Tac Toe</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/logo-search/" target="_blank">
+            <img src="images/logo-search.png" width="175px" height="100px">
+          </a>
+          <p>Logo Search</p>   
+        </li>
+        <li>
+          <a href="http://doonyby.github.io/Map-my-elevation/" target="_blank">
+            <img src="images/json-map.png" width="175px" height="100px">
+          </a>
+          <p>JSON Elevation Map</p>   
+        </li>
+      </ul>
+    </div>
+    <div class="background">
+      <h2>Education & Background</h2>
+      <p>My education consists of a bachelor degree in emergency medicine with an emphasis in wilderness rescue.  My later educations consists of a Web Development Career Path completed through Thinkful.  As I mentioned before, my experience in Web Development consists of html, css, jquery, javascript, and ajax.  The list will increase as I continue through my schooling.  My past experiences have ranged from case management in drug and aclohol rehabilitation, to running a crew for a tile and stone company.</p>
+    </div>
+    <div class="footer">
+      <h2>Find me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>, <a href="https://gmail.com" target="_blank">Gmail</a> and <a href="https://github.com/" target="_blank">GitHub</a></h2>
+    </div>
   </section>
 </body>
 </html>

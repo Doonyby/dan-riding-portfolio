@@ -14,6 +14,10 @@ body {
 	font-weight: 300;
 }
 
+/*div {
+	border: 2px solid black;
+}*/
+
 p {
 	font-family: "Quattrocento" , serif;
 }
@@ -30,6 +34,51 @@ section {
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
+}
+
+#enter {
+  background-color: #222B38;
+  font-family: "Oswald" , sans-serif;
+  color: #FFAA18;
+  text-shadow: 3px 4px 1px #000;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px #000;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1em;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#enter span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#enter span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#enter:hover span {
+  padding-right: 25px;
+}
+
+#enter:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 h2,
@@ -57,22 +106,35 @@ img {
 
 }
 
-.masthead-intro,
-.masthead-heading {
-	text-align: right;
-	margin-right: 24.5%;
+.body {
+	height: 730px;
+}
+
+header > div {
+	float: left;
+}
+
+header {
+	overflow: auto;
+}
+
+.swingPic {
+	width: 30em;
+}
+
+.introTitles {
+	width: 30em;
+	text-align: center;
+	margin-left: 10em;
 	letter-spacing: 0.12em;
-	
-}
-
-.masthead-intro{
-	margin-top: -14em;
+	height: 730px;
+	padding-top: 255px;
 }
 
 .masthead-heading {
-	margin-bottom: 22em;
-	margin-right: 26%; 	
+	padding-bottom: 12px;
 }
+
 
 .links > li {
 	display: inline-block;
