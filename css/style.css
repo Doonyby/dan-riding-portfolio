@@ -26,16 +26,6 @@ a {
 	color: #FFAA18;
 }
 
-a:hover {
-	opacity: 0.4;
-}
-
-section {
-	margin: 0 auto;
-	width: 60%;
-	text-align: center;
-}
-
 #enter {
   background-color: #222B38;
   font-family: "Oswald" , sans-serif;
@@ -90,6 +80,22 @@ h2 {
 	box-shadow: 2px 3px 3px 4px #000;
 }
 
+a:active,
+a:after,
+a:hover {
+	color: #0D6EFE;
+	cursor: pointer;
+}
+
+a:focus {
+	color: #FFAA18;
+}
+
+#backToCover {
+	text-align: right;
+	float: right;
+}
+
 h1,
 h3 {
 	text-shadow: 3px 4px 1px #000;
@@ -100,35 +106,25 @@ img {
 }	
 
 #swing {
-	width: 440px;
-	height: 730px;
+	text-align: left;
 	border: 5px solid #000;
+}
 
+#swingPic {
+	padding: 0px;
 }
 
 .body {
 	height: 730px;
-}
-
-header > div {
-	float: left;
-}
-
-header {
-	overflow: auto;
-}
-
-.swingPic {
-	width: 30em;
+	margin-top: 75px;
+	text-align: center;
 }
 
 .introTitles {
-	width: 30em;
 	text-align: center;
-	margin-left: 10em;
 	letter-spacing: 0.12em;
-	height: 730px;
-	padding-top: 255px;
+	margin-top: 260px;
+	padding-left: 30px;
 }
 
 .masthead-heading {
@@ -142,34 +138,26 @@ header {
 	padding: 1.5em;
 }
 
-.portfolio,
-.background,
-.footer {
-	margin-top: 5em;
+.links {
+	padding-left: 0;
 }
 
-@media only screen and (max-width: 800px) {
-	.links > li {
-		padding: 0.4em;
+@media only screen and (max-width: 700px) {
+
+	.introTitles {
+		margin-top: 15px;
+		text-align: center;
+		letter-spacing: 0.12em;
 	}
-	
+
 	#swing {
-		width: 50%;
-		height: 200%;
+		padding: 0px;
+		width: 250px;
+		height: 400px;
 	}
 
-	.masthead-intro,
-	.masthead-heading {
-		margin-right: 15%;
-		letter-spacing: 0.05em;
+	header {
+		text-align: center;
 	}
 
-	.masthead-intro {
-		font-size: 1em;
-		margin-right: 13%;
-	}
-
-	.masthead-heading {
-		font-size: .075em;
-	}
 }

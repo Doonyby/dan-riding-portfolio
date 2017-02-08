@@ -3,113 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <title>dan-riding-portfolio</title>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Quattrocento:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
 </head>
 <body>
   <header class="introduction">
-    <div class="swingPic">
-      <img id="swing" src="images/carona-arch.jpg">
-    </div>  
-    <div class="introTitles">
-      <h1 class="masthead-intro">Dan Riding</h1>
-      <h3 class="masthead-heading">Web Developer</h3>
-      <button id="enter"><span>Enter Site!</span></button>
-    </div>  
+    <div class="row">
+      <div class="col-md-5 swingPic">
+        <img id="swing" src="images/carona-arch.jpg">
+      </div>  
+      <div class="col-md-2 col-md-offset-2 introTitles">
+        <h1 class="masthead-intro">Dan Riding</h1>
+        <h3 class="masthead-heading">Web Developer</h3>
+        <button id="enter"><span>Enter Site!</span></button>
+      </div>  
+    </div>
   </header>
   <br><br>
-  <section class="body">
-    <div class="overview">
-      <h2>Overview</h2>
-      <p>I am a web developer from Salt Lake City with an up and coming background in building and designing web sites.  Most of my work to this point consists in front end develpment.  I have some experienc in html, css, jquery, javascript, and ajax.  I will soon have experience in node.js, angular.js, and react.</p>
-    </div>
-    <div class="portfolio">
-      <h2>Projects</h2>
-      <ul class="links">
-        <li>
-          <a href="http://codepen.io/danriding/full/obRMEZ/" target="_blank">
-            <img src="images/intropage.png" width="175px" height="100px">
-          </a>
-          <p>About Me</p>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/0B1fE6DK6GoL_VzM4TEI1T29GZlU/view" target="_blank">
-            <img src="images/timeshack.png" width="175px" height="100px">
-          </a>
-          <p>NY Times Hack</p>
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/startup-landing-page-clone/" target="_blank">
-            <img src="images/karmaclon.png" width="175px" height="100px">
-          </a>
-        <p>Karma Landing Page Clone</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/jquery-streetfighter/" target="_blank">
-            <img src="images/jquery-streetfighter.png" width="175px" height="100px">
-          </a>
-          <p>Jquery Streetfighter</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/shopping-list/" target="_blank">
-            <img src="images/shopping-list.png" width="175px" height="100px">
-          </a>
-          <p>JS/Bootstrap Shopping List</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/hot-or-cold-starter/" target="_blank">
-            <img src="images/hot-or-cold.png" width="175px" height="100px">
-          </a>
-          <p>Hot or Cold Game</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/quiz-ski-conditions/" target="_blank">
-            <img src="images/quiz.png" width="175px" height="100px">
-          </a>
-          <p>Backcountry Quiz Challenge</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/contacts-application/" target="_blank">
-            <img src="images/contacts-app.png" width="175px" height="100px">
-          </a>
-          <p>Contacts Application</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/stackerAJAX/" target="_blank">
-            <img src="images/ajax-stacker.png" width="175px" height="100px">
-          </a>
-          <p>AJAX Stacker Application</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/tictactoe-2/" target="_blank">
-            <img src="images/tictactoe.png" width="175px" height="100px">
-          </a>
-          <p>Tic Tac Toe</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/logo-search/" target="_blank">
-            <img src="images/logo-search.png" width="175px" height="100px">
-          </a>
-          <p>Logo Search</p>   
-        </li>
-        <li>
-          <a href="http://doonyby.github.io/Map-my-elevation/" target="_blank">
-            <img src="images/json-map.png" width="175px" height="100px">
-          </a>
-          <p>JSON Elevation Map</p>   
-        </li>
-      </ul>
-    </div>
-    <div class="background">
-      <h2>Education & Background</h2>
-      <p>My education consists of a bachelor degree in emergency medicine with an emphasis in wilderness rescue.  My later educations consists of a Web Development Career Path completed through Thinkful.  As I mentioned before, my experience in Web Development consists of html, css, jquery, javascript, and ajax.  The list will increase as I continue through my schooling.  My past experiences have ranged from case management in drug and aclohol rehabilitation, to running a crew for a tile and stone company.</p>
-    </div>
-    <div class="footer">
-      <h2>Find me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>, <a href="https://gmail.com" target="_blank">Gmail</a> and <a href="https://github.com/" target="_blank">GitHub</a></h2>
+  <section class="container body">
+    <div class="row" role="tablist" aria-multiselectable="true">
+      <div class="col-md-8 col-md-offset-2">
+        <div>
+          <h2 role="tab" id="headingOne">
+            <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Overview
+            </a>
+          </h2>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body overview">
+            <p>I am a web developer from Salt Lake City with an up and coming background in building and designing web sites.  Most of my work to this point consists in front end develpment.  I have some experienc in html, css, jquery, javascript, and ajax.  I will soon have experience in node.js, angular.js, and react.</p>
+          </div>
+        </div>
+        <div>
+            <h2 role="tab" id="headingTwo">
+              <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Projects
+              </a>
+            </h2>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body portfolio">
+              <ul class="links">
+                <li>
+                  <a href="http://doonyby.github.io/quiz-ski-conditions/" target="_blank">
+                    <img src="images/quiz.png" width="175px" height="100px">
+                  </a>
+                  <p>Backcountry Quiz Challenge</p>   
+                </li>
+                <li>
+                  <a href="http://doonyby.github.io/Map-my-elevation/" target="_blank">
+                    <img src="images/map-my-elevation.png" width="175px" height="100px">
+                  </a>
+                  <p>JSON Elevation Map</p>   
+                </li>
+                <li>
+                  <a href="http://doonyby.github.io/Map-my-elevation/" target="_blank">
+                    <img src="images/bcskibuddy.png" width="175px" height="100px">
+                  </a>
+                  <p>Backcountry Ski Buddy</p>   
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+            <h2 role="tab" id="headingThree">
+              <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Education & Background
+              </a>
+            </h2>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body background">
+              <p>My education consists of a bachelor degree in emergency medicine with an emphasis in wilderness rescue.  My later educations consists of a Web Development Career Path completed through Thinkful.  As I mentioned before, my experience in Web Development consists of html, css, jquery, javascript, and ajax.  The list will increase as I continue through my schooling.  My past experiences have ranged from case management in drug and aclohol rehabilitation, to running a crew for a tile and stone company.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>Find me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>, <a href="https://gmail.com" target="_blank">Gmail</a>, and <a href="https://github.com/" target="_blank">GitHub</a></h2>
+          <br>
+          <a id="backToCover">Back to cover page</a>
+        </div>
+      </div>
     </div>
   </section>
 </body>

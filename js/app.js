@@ -6,5 +6,10 @@ $(document).ready(function() {
 			$('.body').fadeIn(1000, "swing");
 		});
 	});
+	$('#backToCover').click(function() {
+		$('.body').fadeOut("slow", "swing", function() {
+			$('.introduction').fadeIn(1000, "swing");
+		});
+	});
 
 });
