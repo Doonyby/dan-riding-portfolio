@@ -12,63 +12,108 @@ body {
 	font-family: "Oswald" , sans-serif;
 	color: #FFAA18;
 	font-weight: 300;
+	display: inline-block;
+	text-align: center;
 }
 
 /*div {
-	border: 2px solid black;
+	border: 2px solid white;
 }*/
 
-p {
+p,
+a {
 	font-family: "Quattrocento" , serif;
+	letter-spacing: 0.08em;
 }
 
 a {
 	color: #FFAA18;
 }
 
-#enter {
-  background-color: #222B38;
-  font-family: "Oswald" , sans-serif;
-  color: #FFAA18;
-  text-shadow: 3px 4px 1px #000;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  display: inline-block;
-  border-radius: 4px;
-  box-shadow: 1px 1px 1px 1px #000;
-  border: 1px solid black;
-  text-align: center;
-  font-size: 1em;
-  padding: 5px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+.aboutParagraph {
+	font-size: 16px;
+	padding-left: 48px ;
+	padding-right: 48px ;
 }
 
-#enter span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.siteTitle {
+	font-size: 14px;
 }
 
-#enter span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.socialLinks:active,
+.socialLinks:after,
+.socialLinks:hover {
+	color: #0D6EFE;
+	cursor: pointer;
 }
 
-#enter:hover span {
-  padding-right: 25px;
+.socialLinks:focus {
+	color: #FFAA18;	
 }
 
-#enter:hover span:after {
-  opacity: 1;
-  right: 0;
+#swingPicContainer {
+	float: left;
+	height: 100vh;
+	width: 33%;
+}
+
+#swingPic {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/carona-arch.jpg);
+	background-position: left top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding: 0px;
+	border: 3px solid #111;
+}
+
+.intro {
+	height: 100vh;
+	width: 66.9%;
+	float: right;
+	text-align: center;
+	letter-spacing: 0.12em;
+	overflow: auto;
+}
+
+.introName {
+	padding-top: 250px;
+	padding-bottom: 5px;
+}
+
+.introTitle {
+	padding-bottom: 12px;
+}
+
+#portfolioBody {
+	margin-top: 400px;
+	padding: 0 70px 200px 70px;
+}
+
+#backToTop {
+	float: right;
+}
+
+.textLeft {
+	text-align: left;
+}
+
+.appLinks {
+	float: left;
+	text-align: left;
+	color: #0D6EFE;
+}
+
+#skiPic:hover,
+#bookPic:hover,
+#elevationPic:hover {
+	opacity: 0.4;
+}
+
+#headingOne {
+	padding-bottom: 10px;
 }
 
 h2,
@@ -76,61 +121,26 @@ h1 {
 	color: #0D6EFE;
 }
 
-h2 {
-	box-shadow: 2px 3px 3px 4px #000;
+.projectDiv {
+	width: 175px;
+	height: 100px;
 }
 
-a:active,
-a:after,
-a:hover {
-	color: #0D6EFE;
+a:hover,
+a:focus {
+	color: #FFAA18;
 	cursor: pointer;
 }
 
-a:focus {
-	color: #FFAA18;
-}
-
-#backToCover {
-	text-align: right;
-	float: right;
-}
-
 h1,
+h2,
 h3 {
-	text-shadow: 3px 4px 1px #000;
+	text-shadow: 3px 4px 1px #111;
 }
 
 img {
-	border: 2px solid #000;
+	border: 2px solid #111;
 }
-
-#swing {
-	text-align: left;
-	border: 5px solid #000;
-}
-
-#swingPic {
-	padding: 0px;
-}
-
-.body {
-	height: 730px;
-	margin-top: 75px;
-	text-align: center;
-}
-
-.introTitles {
-	text-align: center;
-	letter-spacing: 0.12em;
-	margin-top: 260px;
-	padding-left: 30px;
-}
-
-.masthead-heading {
-	padding-bottom: 12px;
-}
-
 
 .links > li {
 	display: inline-block;
@@ -142,22 +152,75 @@ img {
 	padding-left: 0;
 }
 
+#enter {
+  background-color: #222B38;
+  font-family: "Oswald" , sans-serif;
+  color: #FFAA18;
+  text-shadow: 3px 4px 1px #111;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px #111;
+  border: 1px solid #111;
+  text-align: center;
+  font-size: 1em;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#backToTop span,
+#enter span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#backToTop span:after {
+  content: "↑";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;	
+}
+
+#enter span:after {
+  content: "↓";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#backToTop:hover span,
+#enter:hover span {
+  padding-right: 25px;
+}
+
+#backToTop:hover span:after,
+#enter:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 @media only screen and (max-width: 700px) {
 
-	.introTitles {
+	.intro {
 		margin-top: 15px;
 		text-align: center;
 		letter-spacing: 0.12em;
 	}
 
-	#swing {
+	#swingPicContainer {
 		padding: 0px;
 		width: 250px;
 		height: 400px;
-	}
-
-	header {
-		text-align: center;
 	}
 
 }

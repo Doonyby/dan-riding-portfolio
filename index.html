@@ -4,105 +4,61 @@
   <meta charset="UTF-8">
   <title>dan-riding-portfolio</title>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://use.fontawesome.com/b273351f26.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Quattrocento:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://use.fontawesome.com/b273351f26.js"></script>
   <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
 </head>
-<body>
-  <header class="introduction">
-    <div class="row">
-      <div class="col-md-5 swingPic">
-        <img id="swing" src="images/carona-arch.jpg">
-      </div>  
-      <div class="col-md-2 col-md-offset-2 introTitles">
-        <h1 class="masthead-intro">Dan Riding</h1>
-        <h3 class="masthead-heading">Web Developer</h3>
-        <button id="enter"><span>Enter Site!</span></button>
-      </div>  
+  <body>
+    <div id="swingPicContainer">
+      <div id="swingPic"></div> 
     </div>
-  </header>
-  <br><br>
-  <section class="container body">
-    <div class="row" role="tablist" aria-multiselectable="true">
-      <div class="col-md-8 col-md-offset-2">
-        <div>
-          <h2 role="tab" id="headingOne">
-            <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Overview
-            </a>
-          </h2>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body overview">
-            <p>I am a web developer from Salt Lake City with an up and coming background in building and designing web sites.  Most of my work to this point consists in front end develpment.  I have some experienc in html, css, jquery, javascript, and ajax.  I will soon have experience in node.js, angular.js, and react.</p>
-          </div>
-        </div>
-        <div>
-            <h2 role="tab" id="headingTwo">
-              <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Projects
-              </a>
-            </h2>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body portfolio">
-              <ul class="links">
-                <li>
-                  <div width="175px" height="100px" id="book">
-                    <img src="images/myClub.png" width="175px" height="100px"> 
-                  </div>
-                  <div id="bookDiv" width="175px" height="100px">
-                    <a href="https://mighty-wave-93354.herokuapp.com/" target="_blank">Live Site</a>
-                    <a href="https://github.com/Doonyby/inside_book_club" target="_blank">Github</a>
-                  </div>                  
-                  <p>Inside Book Club</p>   
-                </li>
-                <li>
-                  <div width="175px" height="100px" id="ski">
-                    <img src="images/bcskibuddy.png" width="175px" height="100px">
-                  </div>
-                  <div id="skiDiv" width="175px" height="100px">
-                    <a href="https://calm-meadow-29295.herokuapp.com/" target="_blank">Live Site</a>
-                    <a href="https://github.com/Doonyby/bcskibuddy" target="_blank">Github</a>
-                  </div>
-                  <p>Backcountry Ski Buddy</p>   
-                </li>
-                <li>
-                  <div width="175px" height="100px" id="elevation">
-                    <img src="images/map-my-elevation.png" width="175px" height="100px">
-                  </div>
-                  <div id="elevationDiv" width="175px" height="100px">
-                    <a href="http://doonyby.github.io/Map-my-elevation/" target="_blank">Live Site</a>
-                    <a href="https://github.com/Doonyby/Map-my-elevation" target="_blank">Github</a>
-                  </div>                  
-                  <p>Map My Elevation</p>   
-                </li>
-              </ul>
+    <div class="intro">
+      <h1 class="introName">Dan Riding</h1>
+      <h3 class="introTitle">Web Developer</h3>
+      <button id="enter"><span>View Profile</span></button>
+      <div id="portfolioBody">
+        <h2 id="headingOne">About Me</h2>
+        <p class="aboutParagraph textLeft">I am an aspiring developer from Utah with an up and coming background in building and designing web sites.  I recently switched from case management in social work to coding.  I have a background in social work and tiling.  My education consists of a bachelor degree in emergency medicine with an emphasis in wilderness rescue.  My coding experience and education come from completing a full MERN stack Web Development course through <a href="http://thinkful.com" target="_blank">Thinkful.com</a>.</p> 
+        <p class="aboutParagraph textLeft">My interests and hobbies consist of really anything I can get my hands on for an extended period of time.  Most of those revolve around music, sports (especially ones that can be done in the mountains), reading, building things, and having good times with good people.  I wish I was good at art and I play a serious game of ping pong.  My wife and I currently live in Salt Lake City with our daughter, dog, and turtle.  You can contact me through the links at the bottom of the page.</p>
+        <br> 
+        <h2 id="headingTwo">Projects</h2>
+        <ul class="links">
+          <li>
+            <div class="projectDiv">
+              <a href="https://mighty-wave-93354.herokuapp.com/" target="_blank"><img src="images/myClub.png" width="175px" height="100px" id="bookPic"></a>
+              <p class="siteTitle">Inside Book Club</p> 
+              <p class="textLeft">Full stack Express app using react/redux and mongoDB.</p>
+              <a class="appLinks" href="https://github.com/Doonyby/inside_book_club" target="_blank">Source</a><br>
+              <a class="appLinks" href="https://mighty-wave-93354.herokuapp.com/" target="_blank">Demo</a>
             </div>
-          </div>
-        </div>
-        <div>
-            <h2 role="tab" id="headingThree">
-              <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Education & Background
-              </a>
-            </h2>
-          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body background">
-              <p>My education consists of a bachelor degree in emergency medicine with an emphasis in wilderness rescue.  My later educations consists of a Web Development Career Path completed through Thinkful.  As I mentioned before, my experience in Web Development consists of html, css, jquery, javascript, and ajax.  The list will increase as I continue through my schooling.  My past experiences have ranged from case management in drug and aclohol rehabilitation, to running a crew for a tile and stone company.</p>
+          </li>
+          <li>
+            <div class="projectDiv">
+              <a href="https://calm-meadow-29295.herokuapp.com/" target="_blank"><img src="images/bcskibuddy.png" width="175px" height="100px" id="skiPic"></a>
+              <p class="siteTitle">Backcountry Ski Buddy</p> 
+              <p class="textLeft">Full stack Express app using JQuery and MongoDB.</p> 
+              <a class="appLinks" href="https://github.com/Doonyby/bcskibuddy" target="_blank">Source</a><br>
+              <a class="appLinks" href="https://calm-meadow-29295.herokuapp.com/" target="_blank">Demo</a>
             </div>
-          </div>
-        </div>
-        <div class="footer">
-          <h2>Find me on <a href="https://www.linkedin.com/in/dan-riding-186773114" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>, <a href="mailto:doonyby@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>, and <a href="https://github.com/Doonyby" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></h2>
-          <br>
-          <a id="backToCover">Back to cover page</a>
-        </div>
+          </li>
+          <li>
+            <div class="projectDiv">
+              <a href="http://doonyby.github.io/Map-my-elevation/" target="_blank"><img src="images/map-my-elevation.png" width="175px" height="100px" id="elevationPic"></a>
+              <p class="siteTitle">Map My Elevation</p> 
+              <p class="textLeft">Frontend app made with JQuery and mapquest.com's API.</p> 
+              <a class="appLinks" href="https://github.com/Doonyby/Map-my-elevation" target="_blank">Source</a><br>
+              <a class="appLinks" href="http://doonyby.github.io/Map-my-elevation/">Demo</a>
+            </div> 
+          </li>
+        </ul> 
+        <br>      
+        <h2>Find me on <a class="socialLinks" href="https://www.linkedin.com/in/dan-riding-186773114" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>, <a class="socialLinks" href="mailto:doonyby@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>, and <a class="socialLinks" href="https://github.com/Doonyby" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></h2>
+        <br>
+        <a id="backToTop"><span>Back to Top</span></a>
       </div>
     </div>
-  </section>
-</body>
+  </body>
 </html>
