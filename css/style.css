@@ -211,16 +211,47 @@ img {
 
 @media only screen and (max-width: 700px) {
 
+	body {
+		display: inline;
+	}
+
 	.intro {
+		width: 100%;
+		float: none;
+		overflow: visible;
 		margin-top: 15px;
 		text-align: center;
 		letter-spacing: 0.12em;
 	}
 
+	.introName {
+		padding-top: 50px;
+	}
+
+	#portfolioBody {
+		margin-top: 50px;
+	}
+
+	.aboutParagraph {
+		font-size: 16px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	#swingPicContainer {
+		float: none;
 		padding: 0px;
 		width: 250px;
 		height: 400px;
+	}
+
+	#swingPic {
+		background-position: center;
+	}
+
+	#enter,
+	#backToTop {
+		display: none;
 	}
 
 }
