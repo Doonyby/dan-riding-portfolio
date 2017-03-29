@@ -1,0 +1,8 @@
+html {
+	box-sizing: border-box;
+	-web-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
