@@ -1,8 +1,30 @@
-html {
+/*html {
 	box-sizing: border-box;
 	-web-font-smoothing: antialiased;
 }
 
 *, *:before, *:after {
 	box-sizing: inherit;
+}*/
+
+div {
+	border: 1px black solid;
 }
+
+.container {
+	height: 100vh;
+	background-color: #34ADFF;
+    background-image: linear-gradient(130deg, #34ADFF 34%, #4CBFFF 34%);
+
+}
+
+.container1 {
+
+}
+
+.container2 {
+
+}
+
+
+/*project:nth-child(odd) {*/
