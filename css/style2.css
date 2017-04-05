@@ -24,10 +24,15 @@ h1 {
 	font-size: 70px;
 	line-height: 2;
 	background-color: #8dffd8;
-	background: linear-gradient(120deg, #8dffd8 16%, #222 16%);  /*3C397D  4c00d6*/
+	background: linear-gradient(120deg, #8dffd8 16%, #222 16%);  /*3C397D  4c00d6  8dffd8*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+}
+
+h2,
+h3 {
+	padding-bottom: 20px;
 }
 
 a {
@@ -43,17 +48,20 @@ a:focus {
 .name {
 	margin-top: 132px;
 	margin-left: 182px;
+
 }
 
 .title {
-	text-align: center;
-	padding-left: 100px;
-
+	margin-left: 182px;
+	background-color: #8dffd8;
+	background: linear-gradient(120deg, #8dffd8 8%, #222 8%);  /*3C397D  4c00d6  8dffd8*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navigation {
 	float: right;
-	padding-right: 40px;
+	padding-right: 100px;
 	padding-top: 20px;
 	word-spacing: 10px;
 }
@@ -64,21 +72,43 @@ a:focus {
 
 .landing {
 	height: 100vh;
-	background-color: #222;
+	background-color: #fff;
     background-image: linear-gradient(120deg, #222 28%, #fff 28%);
 }
 
 .aboutMe {
-	background-color: #3C397D;
-	color: #8dffd8;
+	background-color: #fff;
+	color: #222;
+	padding: 100px 300px 100px 182px;
 }
 
 .projects {
-	background-color: #3C397D;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100vw;
+}
+
+
+.project > .description {
+	height: inherit;
+	padding: 20px 60px 20px 60px;
+
+}
+
+.project > .projectLinks {
+	background-color: #222;
 	color: #8dffd8;
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: inherit;
+	word-spacing: 10px;
 }
 
 footer {
+	height: 150px;
+	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
 	background-color: #222;
@@ -86,9 +116,15 @@ footer {
 }
 
 footer h2 {
+	padding-top: 50px;
 	margin-top: 0;
 	margin-bottom: 0;	
 }
 
+.credits > p {
+	font-size: 10px;
+	line-height: 1;
+}
 
+/*div.project > h3, h4, div.project-description > p, p ,p*/
 /*project:nth-child(odd) {*/
