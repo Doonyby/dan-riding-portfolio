@@ -8,11 +8,10 @@ html {
 }
 
 div {
-	border: 1px black solid;
+	border: 1px transparent solid;
 }
 
 body {
-
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
@@ -61,7 +60,7 @@ a:focus {
 
 .navigation {
 	float: right;
-	padding-right: 100px;
+	padding-right: 182px;
 	padding-top: 20px;
 	word-spacing: 10px;
 }
@@ -79,13 +78,14 @@ a:focus {
 .aboutMe {
 	background-color: #fff;
 	color: #222;
-	padding: 100px 300px 100px 182px;
+	padding: 150px 300px 150px 182px;
 }
 
 .projects {
-	margin-left: 0;
-	margin-right: 0;
+	padding-left: 182px;
+	padding-right: 182px;
 	width: 100vw;
+	margin-bottom: 150px;
 }
 
 
@@ -96,19 +96,46 @@ a:focus {
 }
 
 .project > .projectLinks {
-	background-color: #222;
-	color: #8dffd8;
+	
 	text-align: center;
 	padding: 30px 0px 30px 0px;
 	margin-top: auto;
 	margin-bottom: auto;
-	height: inherit;
 	word-spacing: 10px;
 }
 
+.project:nth-child(even) {
+	background-color: #222;
+	color: #fff;
+}
+
+.project:nth-child(even) > .description {
+	padding-left: 10px;
+}
+
+.project:nth-child(even) > .projectLinks {
+	padding-left: 76px;
+}
+
+.project:nth-child(odd) > .projectLinks {
+	padding-left: 10px;
+}
+
+.project:nth-child(odd) > .description {
+	padding-right: 10px;
+}
+
+.project:nth-child(odd) a {
+	color: #222;
+}
+
+.project:nth-child(even) a {
+	color: #fff;
+}
+
 footer {
-	height: 150px;
 	text-align: center;
+	height: 150px;
 	margin-top: 0;
 	margin-bottom: 0;
 	background-color: #222;
