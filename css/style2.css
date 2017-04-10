@@ -34,16 +34,6 @@ h3 {
 	padding-bottom: 20px;
 }
 
-a {
-	color: #8dffd8;
-}
-
-a:hover,
-a:active,
-a:focus {
-	cursor: hand;
-}
-
 .name {
 	margin-top: 132px;
 	margin-left: 182px;
@@ -88,20 +78,34 @@ a:focus {
 	margin-bottom: 150px;
 }
 
+.project {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.project p {
+	font-size: 15px;
+}
+
 
 .project > .description {
-	height: inherit;
-	padding: 20px 60px 20px 60px;
-
+	height: 100%;
+	flex: 1;
 }
 
 .project > .projectLinks {
-	
+	flex: 1;
+	height: 100%;
 	text-align: center;
-	padding: 30px 0px 30px 0px;
 	margin-top: auto;
 	margin-bottom: auto;
 	word-spacing: 10px;
+}
+
+.button {
+	border: 3px solid;
+	padding: 5px 10px 5px 10px;
 }
 
 .project:nth-child(even) {
@@ -110,11 +114,11 @@ a:focus {
 }
 
 .project:nth-child(even) > .description {
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .project:nth-child(even) > .projectLinks {
-	padding-left: 76px;
+
 }
 
 .project:nth-child(odd) > .projectLinks {
@@ -122,15 +126,27 @@ a:focus {
 }
 
 .project:nth-child(odd) > .description {
-	padding-right: 10px;
+
 }
 
 .project:nth-child(odd) a {
 	color: #222;
 }
 
+.project:nth-child(odd) .button:hover {
+	color: #fff;
+	background-color: #222;
+	border: 3px solid #222;
+}
+
 .project:nth-child(even) a {
 	color: #fff;
+}
+
+.project:nth-child(even) .button:hover {
+	color: #222;
+	background-color: #fff;
+	border: 3px solid #fff;
 }
 
 footer {
@@ -146,6 +162,18 @@ footer h2 {
 	padding-top: 50px;
 	margin-top: 0;
 	margin-bottom: 0;	
+}
+
+footer a {
+	color: #8dffd8;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+	cursor: hand;
+	color: #8dffd8;
+	opacity: 0.7;
 }
 
 .credits > p {
