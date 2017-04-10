@@ -1,9 +1,10 @@
 $(document).ready(function() {
-	$('#enter').click(function() {
-		$('.intro').animate({scrollTop: 775},800);
+	$('#profile').click(function() {
+		console.log('click');
+		$('body').animate({scrollTop: 50},800);
 	});
 
-	$('#backToTop').click(function() {
-		$('.intro').animate({scrollTop: 0},800);
+	$('#projects').click(function() {
+		$('body').animate({scrollTop: 500},800);
 	});
 });
