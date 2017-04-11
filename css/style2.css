@@ -48,7 +48,10 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:after,
+a:focus {
 	text-decoration: none;
 }
 
