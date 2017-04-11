@@ -48,10 +48,26 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
+header {
+	height: 40px;
+	width: 100vw;
+	position: fixed;
+	background-color: #fff;
+	z-index: 3;
+}
+
+header a:hover {
+	opacity: 0.7;
+}
+
 .navigation {
 	float: right;
 	padding-right: 182px;
-	padding-top: 20px;
+	padding-top: 7px;
 	word-spacing: 10px;
 }
 
@@ -77,10 +93,11 @@ h3 {
 .aboutMe {
 	background-color: #fff;
 	color: #222;
-	padding: 150px 300px 150px 182px;
+	padding: 150px 300px 100px 182px;
 }
 
 .projects {
+	padding-top: 50px;
 	padding-left: 182px;
 	padding-right: 182px;
 	width: 100vw;

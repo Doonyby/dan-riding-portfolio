@@ -1,10 +1,13 @@
 $(document).ready(function() {
 	$('#profile').click(function() {
-		console.log('click');
-		$('body').animate({scrollTop: 50},800);
+		$(".aboutMe").velocity("scroll", 800);
 	});
 
 	$('#projects').click(function() {
-		$('body').animate({scrollTop: 500},800);
+		$(".projects").velocity("scroll", 800);
+	});
+
+	$('#contact').click(function() {
+		$("footer").velocity("scroll", 800);
 	});
 });
