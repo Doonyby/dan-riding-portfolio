@@ -18,35 +18,40 @@ body {
 	color: #222;
 }
 
-h1 {
-	font-family: 'Poller One', cursive;
-	font-size: 70px;
-	line-height: 2;
-	background-color: #8dffd8;
-	background: linear-gradient(120deg, #8dffd8 16%, #222 16%);  /*3C397D  4c00d6  8dffd8*/
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-}
-
 h2,
 h3 {
 	padding-bottom: 20px;
 }
 
-.name {
+/*h1 {
+	font-family: 'Poller One', cursive;
+	font-size: 70px;
+	line-height: 2;
+	background-color: #8dffd8;
+	background: linear-gradient(120deg, #8dffd8 16%, #222 16%);  3C397D  4c00d6  8dffd8
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}*/
+
+/*.name {
 	margin-top: 132px;
 	margin-left: 182px;
-
 }
 
 .title {
 	margin-left: 182px;
 	background-color: #8dffd8;
-	background: linear-gradient(120deg, #8dffd8 8%, #222 8%);  /*3C397D  4c00d6  8dffd8*/
+	background: linear-gradient(120deg, #8dffd8 8%, #222 8%);  3C397D  4c00d6  8dffd8
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+}*/
+
+/*.landing {
+	height: 100vh;
+	background-color: #fff;
+    background-image: linear-gradient(120deg, #222 28%, #fff 28%);
+}*/
 
 a:hover,
 a:active,
@@ -78,19 +83,16 @@ header a:hover {
 	color: #222;
 }
 
-/*.landing {
-	height: 100vh;
-	background-color: #fff;
-    background-image: linear-gradient(120deg, #222 28%, #fff 28%);
-}*/
-
 .landing {
-	height: 100vh;
-	width: 100vw;
+/*	height: 100vh;
+	width: 100vw;*/
+	min-width: 1280px;
+	min-height: 800px;
+	max-width: 1280px;
+	max-height: 800px;
 	background-image: url(../images/portBackImage2.png);
 	background-repeat: no-repeat;
-	background-size: 100vw 100vh;
-
+	background-size: 1280px 760px;
 }
 
 .aboutMe {
@@ -115,6 +117,11 @@ header a:hover {
 
 .project p {
 	font-size: 15px;
+}
+
+.icon img {
+	width: 250px;
+	height: 200px;
 }
 
 
@@ -146,16 +153,8 @@ header a:hover {
 	padding-left: 20px;
 }
 
-.project:nth-child(even) > .projectLinks {
-
-}
-
 .project:nth-child(odd) > .projectLinks {
 	padding-left: 10px;
-}
-
-.project:nth-child(odd) > .description {
-
 }
 
 .project:nth-child(odd) a {
@@ -210,5 +209,131 @@ footer a:focus {
 	line-height: 1;
 }
 
-/*div.project > h3, h4, div.project-description > p, p ,p*/
-/*project:nth-child(odd) {*/
+@media only screen and (max-width: 1000px) {
+
+	.navigation {
+		float: right;
+		padding-right: 142px;
+		padding-top: 7px;
+		word-spacing: 10px;
+	}
+
+    .landing {
+    	min-width: 1000px;
+		min-height: 700px;
+		max-width: 1000px;
+		max-height: 700px;
+		width: 100vw;
+		background-image: url(../images/portBackImage2.png);
+		background-repeat: no-repeat;
+		background-size: 1000px 700px;
+	}
+
+	.aboutMe {
+		background-color: #fff;
+		color: #222;
+		padding: 75px 142px 25px 142px;
+	}
+
+	.projects {
+		padding-top: 50px;
+		padding-left: 142px;
+		padding-right: 142px;
+		width: 100vw;
+		margin-bottom: 125px;
+	}
+
+	.icon img {
+		width: 200px;
+		height: 150px;
+	}
+
+	.project {
+		display: flex;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.navigation {
+		float: none;
+		text-align: center;
+		padding-right: 10px;
+		padding-top: 7px;
+		word-spacing: 10px;
+	}
+
+    .landing {
+    	min-width: 100vw;
+		min-height: 100vh;
+		max-width: 100vw;
+		max-height: 100vh;
+		width: 100vw;
+		background-image: url(../images/portBackImage3.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.aboutMe {
+		background-color: #fff;
+		color: #222;
+		padding: 50px 50px 25px 50px;
+	}
+
+	.projects {
+		padding-top: 25px;
+		padding-left: 50px;
+		padding-right: 50px;
+		width: 100vw;
+		margin-bottom: 50px;
+	}
+
+	.icon img {
+		width: 200px;
+		height: 150px;
+	}
+
+	.project {
+		display: block;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.project > .description {
+		height: none;
+	}
+
+	.project:nth-child(even) > .description {
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+
+	.project:nth-child(odd) > .description {
+		padding-top: 20px;
+	}
+
+	.project > .projectLinks {
+		flex: none;
+		height: none;
+		text-align: center;
+		margin-top: none;
+		margin-bottom: none;
+		word-spacing: 10px;
+	}
+
+	footer {
+		height: 150px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	footer h2 {
+		padding-top: 20px;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;	
+	}
+}
+
