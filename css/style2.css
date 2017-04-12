@@ -343,6 +343,8 @@ footer a:focus {
 	}
 
 	footer {
+		padding-right: 15px;
+		padding-left: 15px;
 		height: 150px;
 		margin-top: 0;
 		margin-bottom: 0;
