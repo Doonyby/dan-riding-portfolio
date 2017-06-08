@@ -45,7 +45,7 @@ html, body {
 }
 
 .name h1 {
-    color: #5EDDC1;
+    color: #00ffc7;
     padding-left: 174px;
     font-family: "Catamaran", sans-serif;
 	font-size: 10vw;
@@ -58,7 +58,7 @@ html, body {
 }
 
 .name h2 {
-    color: #5EDDC1;
+    color: #00ffc7;
     padding-left: 182px;
     font-size: 3vw;
     line-height: 0.7;
@@ -80,8 +80,9 @@ header {
 	z-index: 3;
 }
 
-header a:hover {
-	opacity: 0.7;
+header a:hover,
+.aboutMe a:hover {
+	opacity: 0.6;
 }
 
 .navigation {
@@ -91,7 +92,8 @@ header a:hover {
 	word-spacing: 10px;
 }
 
-.navigation a {
+.navigation a,
+.aboutMe a {
 	color: #222;
 }
 
@@ -179,7 +181,7 @@ footer {
 	margin-top: 0;
 	margin-bottom: 0;
 	background-color: #222;
-	color: #5EDDC1;
+	color: #00ffc7;
 }
 
 footer h2 {
@@ -189,14 +191,14 @@ footer h2 {
 }
 
 footer a {
-	color: #A1223E;
+	color:  #ff0038;
 }
 
 footer a:hover,
 footer a:active,
 footer a:focus {
 	cursor: hand;
-	color: #A1223E;
+	color:  #ff0038;
 	opacity: 0.7;
 }
 
