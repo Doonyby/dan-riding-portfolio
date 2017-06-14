@@ -45,24 +45,37 @@ html, body {
 }
 
 .name h1 {
-    color: #00ffc7;
+    color: #35EBFF;
+/*	color: #0BEEFF;*/
+/*	color: #FFDFB8;*/
     padding-left: 174px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     font-family: "Catamaran", sans-serif;
 	font-size: 10vw;
     line-height: 0.9;
-    margin-bottom: 50px;
-    margin-top: 50px;
     font-weight: bold;
     letter-spacing: -2px;
+    margin-left: -1000px;    
     mix-blend-mode: exclusion;
 }
 
 .name h2 {
-    color: #00ffc7;
+    color: #35EBFF;
+/*	color: #0BEEFF;*/
+/*	color: #FFDFB8;*/
     padding-left: 182px;
     font-size: 3vw;
     line-height: 0.7;
     mix-blend-mode: exclusion;
+}
+
+.landingTitle {
+	margin-left: 2000px;
+}
+
+.landingCity {
+	margin-left: -1000px;
 }
 
 a:hover,
