@@ -41,7 +41,8 @@ html, body {
     display: table-cell;
     text-align: left;
     width: 100%;
-    vertical-align: middle;
+    padding-top: 15%;
+/*    vertical-align: middle;*/
 }
 
 .name h1 {
@@ -95,7 +96,7 @@ header {
 
 header a:hover,
 .aboutMe a:hover {
-	opacity: 0.6;
+	color: #ca1400;
 }
 
 .navigation {
@@ -194,7 +195,7 @@ footer {
 	margin-top: 0;
 	margin-bottom: 0;
 	background-color: #222;
-	color: #00ffc7;
+	color: #35EBFF;
 }
 
 footer h2 {
@@ -204,15 +205,14 @@ footer h2 {
 }
 
 footer a {
-	color:  #ff0038;
+	color:  #35EBFF;
 }
 
 footer a:hover,
 footer a:active,
 footer a:focus {
 	cursor: hand;
-	color:  #ff0038;
-	opacity: 0.7;
+	color:  #ca1400;
 }
 
 .credits > p {
@@ -288,7 +288,7 @@ footer a:focus {
 	}
 
 	.name h1 {
-	    color: #5EDDC1;
+	    color: #35EBFF;
 	    padding-left: 44px;
 	    font-family: "Catamaran", sans-serif;
 		font-size: 14vw;
@@ -301,7 +301,7 @@ footer a:focus {
 	}
 
 	.name h2 {
-	    color: #5EDDC1;
+	    color: #35EBFF;
 	    padding-left: 50px;
 	    font-size: 5vw;
 	    line-height: 0.7;
