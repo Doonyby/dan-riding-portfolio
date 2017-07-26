@@ -11,6 +11,6 @@ $(document).ready(function() {
 	});
 
 	$('#contact').click(function() {
-		$("footer").velocity("scroll", 800);
+		$("footer").velocity("scroll", 1500);
 	});
 });

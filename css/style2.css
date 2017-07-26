@@ -42,13 +42,15 @@ html, body {
     text-align: left;
     width: 100%;
     padding-top: 15%;
-/*    vertical-align: middle;*/
 }
 
 .name h1 {
-    color: #35EBFF;
-/*	color: #0BEEFF;*/
+  	color: #35EBFF;
 /*	color: #FFDFB8;*/
+/*	color: #5F7C8C;*/
+	/*color: #75E8CA;*/
+/*	color: #81FFDE;*/
+/*	color: #648396;*/
     padding-left: 174px;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -62,9 +64,7 @@ html, body {
 }
 
 .name h2 {
-    color: #35EBFF;
-/*	color: #0BEEFF;*/
-/*	color: #FFDFB8;*/
+	color: #35EBFF;
     padding-left: 182px;
     font-size: 3vw;
     line-height: 0.7;
@@ -103,11 +103,10 @@ header a:hover,
 	float: right;
 	padding-right: 182px;
 	padding-top: 7px;
-	word-spacing: 10px;
 }
 
-.navigation a,
-.aboutMe a {
+.navigation a {
+	padding-right: 10px;
 	color: #222;
 }
 
@@ -200,6 +199,7 @@ footer {
 
 footer h2 {
 	padding-top: 50px;
+	padding-bottom: 0px;
 	margin-top: 0;
 	margin-bottom: 0;	
 }
@@ -216,7 +216,7 @@ footer a:focus {
 }
 
 .credits > p {
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1;
 }
 
